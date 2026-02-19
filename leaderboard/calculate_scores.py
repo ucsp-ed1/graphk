@@ -66,6 +66,7 @@ def calculate_scores(submission_path: Path):
 
     validation_accuracy = accuracy_score(y_true, y_pred)
     validation_f1_score = f1_score(y_true, y_pred, average="macro")
+    print(validation_accuracy,validation_f1_score)
     return {
         "validation_accuracy": float(validation_accuracy),
         "validation_f1_score": float(validation_f1_score),
