@@ -55,8 +55,9 @@ function renderTable(){
       ["team", r.team],
       ["model", r.model],
       ["score", r.score],
-      ["timestamp_utc", r.timestamp_utc],
       ["notes", r.notes || ""],
+      ["timestamp_utc", r.timestamp_utc],
+
     ];
     cells.forEach(([k, v]) => {
       const td = document.createElement("td");
