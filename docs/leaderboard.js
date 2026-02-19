@@ -182,7 +182,7 @@ async function main(){
 
     // normalize and compute rank order by score (descending) initially
     const cleaned = rows
-      .filter(r => r.team) // ignore empty template line
+      .filter(r => r.team_name) // ignore empty template line
       // .map(r => ({
       //   timestamp_utc: r.timestamp_utc,
       //   team: r.team,
